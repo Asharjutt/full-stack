@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons CSS -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Raleway Font -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Responsive Navbar</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AIRLINE</div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="booking.html">book-now</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Slide-down Navbar Menu (for small screens) -->
+  <div class="nav-menu">
+    <button class="close-btn">&times;</button>
+    <ul>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="booking.html">book-now</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Hero Section -->
+   <section class="hero">
+    <!-- Left Side: Text Content -->
+    <div class="hero-content">
+      <h1>Welcome to Our Airport</h1>
+      <p>Your journey begins here. Experience seamless travel and top-notch facilities.</p>
+      <button class="hero-btn">More About Us</button>
+    </div>
+    
+    <!-- Right Side: Image Carousel -->
+    <div class="hero-carousel">
+      <div class="carousel-images">
+        <img src="hero.png" alt="Airport Image 1">
+        <img src="hero 2.jpg" alt="Airport Image 2">
+        <img src="hero 3.jpg" alt="Airport Image 3">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Ticket Booking Section -->
+  <section class="ticket-booking">
+    <div class="booking-field">
+      <label for="departure">Departure</label>
+      <input type="text" id="departure" placeholder="Enter Departure City">
+    </div>
+    <div class="booking-field">
+      <label for="arrival">Arrival</label>
+      <input type="text" id="arrival" placeholder="Enter Arrival City">
+    </div>
+    <div class="booking-field">
+      <label for="date">Date</label>
+      <input type="date" id="date">
+    </div>
+    <div class="booking-field">
+      <label for="class">Class</label>
+      <select id="class">
+        <option value="economy">Economy</option>
+        <option value="business">Business</option>
+        <option value="first">First Class</option>
+      </select>
+    </div>
+    <div class="booking-field">
+      <button class="hero-btn">Search Flights</button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Airport Facilities Section -->
+<section class="facility-section">
+  <h2>Airport Facilities</h2>
+  <div class="facility-cards">
+    <div class="facility-card" data-aos="fade-up">
+      <i class="bx bx-credit-card"></i> <!-- ATM Icon -->
+      <h3>ATM</h3>
+    </div>
+    <div class="facility-card" data-aos="fade-up">
+      <i class="bx bx-food-menu"></i> <!-- Food Icon -->
+      <h3>Food</h3>
+    </div>
+    <div class="facility-card" data-aos="fade-up">
+      <i class="bx bx-store"></i> <!-- Mall Icon -->
+      <h3>Mall</h3>
+    </div>
+   
+    <div class="facility-card" data-aos="fade-up">
+      <i class="bx bx-wifi"></i> <!-- Wi-Fi Icon -->
+      <h3>Free Wi-Fi</h3>
+    </div>
+    <div class="facility-card" data-aos="fade-up">
+      <i class="bx bx-wifi"></i> <!-- Wi-Fi Icon -->
+      <h3>Free Wi-Fi</h3>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="flight-info-section">
+  <h2>Flight Information</h2>
+  <div class="flight-cards">
+    <!-- Flight Card 1 -->
+    <div class="flight-card" data-aos="fade-up">
+      <div class="flight-image">
+        <img src="737.jpg" alt="Flight 101 Image"> <!-- Replace with your image path -->
+      </div>
+      <div class="flight-details">
+        <i class="bx bx-plane-alt"></i> <!-- Airplane Icon -->
+        <h3>Flight 101</h3>
+        <p><strong>Airplane:</strong> Boeing 737</p>
+        <p><strong>Destination:</strong> New York, USA</p>
+        <p><strong>Departure Time:</strong> 10:00 AM</p>
+        <p><strong>Arrival Time:</strong> 2:00 PM</p>
+        <p><strong>Status:</strong> On Time</p>
+      </div>
+    </div>
+     
+    <!-- Flight Card 2 -->
+    <div class="flight-card" data-aos="fade-up">
+      <div class="flight-image">
+        <img src="a380.jpg" alt="Flight 202 Image"> <!-- Replace with your image path -->
+      </div>
+      <div class="flight-details">
+        <i class="bx bx-plane-alt"></i> <!-- Airplane Icon -->
+        <h3>Flight 202</h3>
+        <p><strong>Airplane:</strong> Airbus A320</p>
+        <p><strong>Destination:</strong> London, UK</p>
+        <p><strong>Departure Time:</strong> 12:30 PM</p>
+        <p><strong>Arrival Time:</strong> 4:30 PM</p>
+        <p><strong>Status:</strong> Delayed</p>
+      </div>
+    </div>
+
+    <!-- Flight Card 3 -->
+    <div class="flight-card" data-aos="fade-up">
+      <div class="flight-image">
+        <img src="boing 777.jpg" alt="Flight 303 Image"> <!-- Replace with your image path -->
+      </div>
+      <div class="flight-details">
+        <i class="bx bx-plane-alt"></i> <!-- Airplane Icon -->
+        <h3>Flight 303</h3>
+        <p><strong>Airplane:</strong> Boeing 777</p>
+        <p><strong>Destination:</strong> Paris, France</p>
+        <p><strong>Departure Time:</strong> 6:00 AM</p>
+        <p><strong>Arrival Time:</strong> 9:00 AM</p>
+        <p><strong>Status:</strong> On Time</p>
+      </div>
+    </div>
+
+    <!-- Add more flight cards here -->
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="safety-guidelines-section">
+  <h2 style="color: rgb(1, 1, 41);">Safety Guidelines & Travel Restrictions</h2>
+  
+  <div class="safety-cards">
+    
+    <!-- Important Safety Protocols -->
+    <div class="safety-card">
+      <div class="safety-icon">
+        <i class="bx bx-shield-alt"></i>
+      </div>
+      <div class="safety-content">
+        <h3>Important Safety Protocols</h3>
+        <ul>
+          <li>Wear masks at all times inside the airport.</li>
+          <li>Sanitize hands regularly using provided hand sanitizers.</li>
+          <li>Maintain social distancing (6 feet) in all areas.</li>
+          <li>Follow temperature checks and health screenings before boarding.</li>
+          <li>Stay home if you're feeling sick or have COVID-19 symptoms.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Travel Restrictions -->
+    <div class="safety-card">
+      <div class="safety-icon">
+        <i class="bx bx-lock-alt"></i>
+      </div>
+      <div class="safety-content">
+        <h3>Travel Restrictions</h3>
+        <ul>
+          <li>Check travel restrictions for your destination country.</li>
+          <li>Some countries may require a negative COVID test result.</li>
+          <li>Quarantine may be required upon arrival in some countries.</li>
+          <li>International travelers must complete health declarations.</li>
+          <li>Stay updated on flight cancellations or delays due to travel bans.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="resource-links">
+    <h3>Useful Resources</h3>
+    <ul>
+      <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">CDC Travel Guidelines</a></li>
+      <li><a href="https://www.who.int/travel-advice" target="_blank">WHO Travel Advice</a></li>
+      <li><a href="https://www.iata.org/en/you/" target="_blank">IATA Guidelines for Travelers</a></li>
+      <li><a href="https://www.airlinewebsite.com" target="_blank">Check Airline Safety Protocols</a></li>
+    </ul>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+<section class="offer-section">
+  <div class="offer-content">
+    <h2>Get 20% Off on Your First Booking!</h2>
+    <p>Hurry, limited time offer!</p>
+    <div class="timer">
+      <div class="time-block">
+        <p id="days">00</p>
+        <span>Days</span>
+      </div>
+      <div class="time-block">
+        <p id="hours">00</p>
+        <span>Hours</span>
+      </div>
+      <div class="time-block">
+        <p id="minutes">00</p>
+        <span>Minutes</span>
+      </div>
+      <div class="time-block">
+        <p id="seconds">00</p>
+        <span>Seconds</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="newsletter-section">
+  <div class="newsletter-content">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest updates, offers, and news straight to your inbox!</p>
+    <form class="newsletter-form" action="#" method="post">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <button type="submit" class="hero-btn">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo Section -->
+    <div class="footer-logo">
+      <h1 style="color: goldenrod;">AIRLINE</h1>
+      <p class="logo-description">Your trusted airport services provider</p>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <h3 style="color: goldenrod;">Follow Us</h3>
+      <ul class="social-links">
+        <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+        <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+      </ul>
+    </div>
+    
+    <!-- Company Details -->
+    <div class="footer-company">
+      <h3 style="color: goldenrod;">Company</h3>
+      <ul class="company-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2024 Airport Services. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- AOS (Animate on Scroll) Library for animations -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+
+
+<!-- AOS (Animate on Scroll) Library for animations -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

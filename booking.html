@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons CSS -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Raleway Font -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Responsive Navbar</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AIRLINE</div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>  
+        <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Slide-down Navbar Menu (for small screens) -->
+  <div class="nav-menu">
+    <button class="close-btn">&times;</button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div><br><br><br>
+
+
+    <!-- Booking Form -->
+    <div class="booking-form-container">
+      <h2 style="color: rgb(2, 2, 41);">Enter Your Details</h2>
+      <form class="booking-form" action="#" method="POST">
+        
+        <!-- Selected Flight -->
+        <div class="form-group">
+          <label for="flight">Your Selected Flight</label>
+          <input type="text" id="selected-flight" name="flight" readonly placeholder="Select a flight above" required>
+        </div>
+
+        <!-- Date Selection -->
+        <div class="form-group">
+          <label for="date">Choose Your Departure Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <!-- Passenger Information -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+          <label for="seats">Number of Seats</label>
+          <input type="number" id="seats" name="seats" required min="1" max="10" placeholder="Select number of seats">
+        </div>
+
+        <button type="submit" class="hero-btn" style="justify-content: center; width: 100%;">Book Now</button>
+      </form>
+    </div>
+  </section><br><br><br><br>
+
+  <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Logo Section -->
+      <div class="footer-logo">
+        <h1 style="color: goldenrod;">AIRLINE</h1>
+        <p class="logo-description">Your trusted airport services provider</p>
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h3 style="color: goldenrod;">Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+          <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+        </ul>
+      </div>
+      
+      <!-- Company Details -->
+      <div class="footer-company">
+        <h3 style="color: goldenrod;">Company</h3>
+        <ul class="company-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Airport Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    function selectFlight(flightName) {
+      document.getElementById('selected-flight').value = flightName;
+    }
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
